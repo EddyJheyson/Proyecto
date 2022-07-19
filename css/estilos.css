@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*----------------------------------------
+SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
+------------------------------------------*/
+.bg-primary {
+  background-color: #e0c6ac !important; }
+
+.bg-dark {
+  background-color: #434b53 !important;
+}
+
+.bg-orange{
+    background-color: #ff401c;
+}
+
+.text-primary {
+  color: #ff401c !important; }
+
+.btn-primary {
+  background-color: #ff401c !important;
+  border-color: #b51d00 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e82500 !important; }
+
+.btn-primary:active {
+  background-color: #b51d00 !important;
+  border-color: #821500 !important; }
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(255, 64, 28, 0.5) !important; }
+
+
+
+/* Galeria */
+
+.portafolio{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(31, 82%, 46%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+.main-section{
+  margin:0 auto;
+  margin-top:25%;
+  padding: 0;
+}
+
+.modal-content{
+  background-color: #3b4652;
+  opacity: .85;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+}
+.user-img{
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+.user-img img{
+  width: 100xp;
+  height: 100px;
+  box-shadow: 0px 0px 3px #848484;
+  border-radius: 50%;
+}
+
+.form-group input{
+  height: 42px;
+  font-size: 18px;
+  border:0;
+  padding-left: 54px;
+  border-radius: 5px;
+}
+
+.form-group::before{
+  font-family: "Font Awesome\ 5 Free";
+  position: absolute;
+  left: 28px;
+  font-size: 22px;
+  padding-top:4px;
+}
+
+.form-group#user-group::before{
+  content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+  content: "\f023";
+}
+
+button{
+  width: 60%;
+  margin: 5px 0 25px;
+}
+
+.forgot{
+  padding: 5px 0;
+}
+
+.forgot a{
+  color: white;
+}
